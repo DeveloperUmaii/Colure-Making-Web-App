@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Color Mixer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Liquid Color Mixer</h1>
+        <input type="text" id="colorCode" placeholder="#ff5733 or rgb(255, 87, 51)">
+        <label for="colorCode">Enter Color Code (Hex/RGB):{রং তৈরি করার জন্য রঙের কোডটি দিন} :</label>
+        
+        <br><br>
+        <input type="number" id="volume" placeholder="1">
+        <label for="volume">Enter Liquid Volume (Liters){কি পরিমাণ লিটার রং তৈরি করতে চাচ্ছেন  সেই লিটারের পরিমাণ টা দিন} :</label>
+        
+        <br><br>
+        <button onclick="mixColors()">Generate Mixture Instructions(রং তৈরির প্রক্রিয়া জানতে ক্লিক করুন)</button>
+
+        <div class="result">
+            <h2>Mixture Instructions</h2>
+            <p id="mixtureDetails"></p>
+            <div id="colorDisplay"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
